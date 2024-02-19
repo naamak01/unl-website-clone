@@ -1,0 +1,341 @@
+/* Apply box-sizing globally with border-box model */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Main styling for the entire page */
+main {
+	background-color: #242423;
+	font-family: 'Work Sans', 'sans-serif';
+}
+
+/* Styling for the admissions introduction section */
+.admissions-intro {
+	padding-top: 55px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin-bottom: 700px;
+}
+
+/* Styling for the image within the admissions introduction section */
+.admissions-intro img {
+	object-fit: cover;
+	width: 1704.22px;
+	height: 533.81px;
+}
+
+/* Styling for the inner div within the admissions introduction section */
+.admission-intro-inner-div {
+	position: absolute;
+	z-index: 1;
+	width: 780px;
+	height: 420px;
+	background-color: rgba(36, 36, 35, 0.98);
+	bottom: -320px;
+	left: 160px;
+	padding-left: 40px;
+	padding-top: 40px;
+	margin-bottom: 90px;
+}
+
+/* Styling for the heading within the inner div */
+.admission-intro-inner-div h2 {
+	font-family: 'Montserrat', 'Arial', 'Helvetica Neue';
+	color: #fefdfa;
+	font-size: 40px;
+	font-style: italic;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/* Styling for the unordered list within the inner div */
+.intro-list-div ul {
+	display: flex;
+	column-gap: 10px;
+}
+
+/* Styling for the paragraphs within the inner div */
+.admission-intro-inner-div p {
+	color: #c7c8ca;
+	line-height: 1.6em;
+	font-size: 21.6px;
+	max-width: 690px;
+}
+
+/* Styling for a specific span within the paragraphs */
+.admission-intro-inner-div p span {
+	color: #71bdd3;
+}
+
+/* Styling for list items within the unordered list */
+.intro-list-div ul li {
+	font-size: 15px;
+}
+
+/* Styling for the first list */
+.intro-list1 {
+	list-style: none;
+	color: #a0d2e0;
+}
+
+/* Styling for the second list */
+.intro-list2 {
+	color: #c7c8ca;
+	list-style: none;
+}
+
+/* Styling for the values and mission section */
+.values-missions-wrapper {
+	margin-top: 180px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 200px;
+	background-color: #d00000;
+}
+
+/* Styling for the inner div within the values and mission section */
+.values-misssion-inner-div {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	color: #fefdfa;
+}
+
+/* Styling for the heading within the inner div */
+.values-misssion-inner-div h4 {
+	margin: 10px;
+	padding-top: 0;
+	font-family: 'Work Sans', serif;
+	font-weight: 400;
+	font-size: 20px;
+}
+
+/* Styling for the paragraphs within the inner div */
+.values-misssion-inner-div p {
+	font-size: 16px;
+}
+
+/* Styling for various main content sections */
+.undergraduate-main-content,
+.undergraduate-excellence-main-content,
+.international-main-content,
+.living-on-campus-main-content,
+.rankings-main-content,
+.research-main-content,
+.Legacy-main-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 30px 50px 90px 50px;
+	margin-top: 0;
+}
+
+/* Styling for images within different main content sections */
+.undergraduate-main-content img,
+.rankings-main-content img,
+.living-on-campus-main-content img,
+.undergraduate-excellence-main-content img,
+.international-main-content img,
+.research-main-content img,
+.Legacy-main-content img {
+	max-height: 460px;
+	width: 790px;
+	object-fit: cover;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+/* Styling for level sections within various main content sections */
+.undergraduate-level,
+.undergraduate-excellence-level,
+.living-on-campus-level,
+.rankings-level,
+.research-level,
+.Legacy-level {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-top: 70px;
+}
+
+/* Styling for headings within specific level sections */
+.undergraduate-level h2,
+.international-level h2,
+.rankings-level h2,
+.research-level h2,
+.Legacy-level h2 {
+	font-size: 2.2em;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+/* Styling for specific level headings */
+.undergraduate-excellence-level h3,
+.living-on-campus-level h3 {
+	font-size: 38px;
+	color: #fff;
+	margin-bottom: 20px;
+	font-weight: 600;
+	font-family: 'Work Sans', 'sans-serif';
+}
+
+/* Styling for inner headers within excellence and campus sections */
+.execellence-inner-header,
+.campus-inner-header {
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+/* Styling for paragraphs within various level sections */
+.undergraduate-level p,
+.international-level p,
+.undergraduate-excellence-level p,
+.living-on-campus-level p,
+.rankings-level p,
+.research-level p,
+.Legacy-level p {
+	color: #c7c8ca;
+	width: 820px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-bottom: 40px;
+}
+
+/* Styling for excellence main content section */
+.undergraduate-excellence-main-content {
+	background-color: hsla(0, 0%, 100%, 0.1);
+	padding-bottom: 250px;
+}
+
+/* Styling for image within excellence main content section */
+.undergraduate-excellence-main-content img {
+	margin-top: -250px;
+}
+
+/* Styling for image within living on campus main content section */
+.living-on-campus-main-content img {
+	margin-top: -150px;
+	margin-left: 0;
+}
+
+/* Styling for level section within excellence main content section */
+.undergraduate-excellence-level {
+	margin-top: -380px;
+	margin-left: 40px;
+}
+
+/* Styling for level section within living on campus main content section */
+.living-on-campus-level {
+	margin-top: -200px;
+	margin-left: 20px;
+}
+
+/* Styling for a specific span within excellence level section */
+.undergraduate-excellence-level span {
+	color: #71bdd3;
+	text-decoration: underline;
+}
+
+/* Styling for unordered lists within specific level sections */
+.undergraduate-excellence-level ul,
+.international-level ul,
+.living-on-campus-level ul {
+	list-style: none;
+	display: flex;
+	column-gap: 15px;
+}
+
+/* Styling for the international inner div section */
+.international-inner-div {
+	margin-top: 150px;
+}
+
+/* Styling for the international main content section */
+.international-main-content {
+	padding-bottom: 170px;
+}
+
+/* Styling for living on campus main content section */
+.living-on-campus-main-content {
+	padding-bottom: 10px;
+}
+
+/* Styling for links within specific level sections */
+.undergraduate-excellence-level ul li a,
+.international-level ul li a,
+.living-on-campus-level ul li a {
+	text-decoration: none;
+	color: #d00000;
+}
+
+/* Styling for specific lists */
+.undergraduate-list1,
+.campus-list1 {
+	background-color: #ebebea;
+	margin-bottom: 10px;
+	padding: 15px 15px 15px 15px;
+	border-radius: 4px;
+	font-size: 1.1em;
+	font-weight: 580;
+	background: #ebebea;
+}
+
+/* Hover effect for specific lists */
+.undergraduate-list1:hover,
+.campus-list1:hover {
+	background-color: #fefdfa;
+}
+
+/* Styling for image within rankings main content section */
+.rankings-main-content img {
+	margin-top: 0;
+}
+
+/* Styling for image within research main content section */
+.research-main-content img {
+	margin-top: -80px;
+}
+
+/* Styling for the rank list section */
+.rank-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	margin-bottom: 20px;
+	font-size: 19px;
+	color: #c7c8ca;
+}
+
+/* Styling for inner rank specifics */
+.inner-rank-specifics {
+	font-style: italic;
+}
+
+/* Styling for research main content section */
+.research-main-content {
+	background-color: hsla(0, 0%, 100%, 0.1);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+/* Styling for living on campus level section heading */
+.living-on-campus-level h3 {
+	margin-bottom: 10px;
+}
+
+/* Styling for unordered list within living on campus level section */
+.living-on-campus-level ul {
+	margin-bottom: 20px;
+	margin-top: 0;
+}

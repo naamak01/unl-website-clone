@@ -1,0 +1,758 @@
+/* Importing Google Fonts for the project */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@100;200;300;400;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@300;400;500&display=swap');
+
+/* Global styling for all elements */
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: Work Sans, 'Sans Serif Fallback', sans;
+}
+
+/* Styling for the navigation wrapper */
+.nav-wrapper {
+	height: 100vh;
+	height: 100dvh; /* Unclear if this is intended */
+	position: relative;
+}
+
+/* Styling for the campus video */
+.campus-video {
+	width: 100%;
+	min-height: 60%;
+	position: absolute;
+	z-index: -1;
+}
+
+/* Media queries for responsive campus video */
+@media (min-aspect-ratio: 16/9) {
+	.campus-video {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.campus-video {
+		width: auto;
+		height: 100%;
+	}
+}
+
+/* Styling for the first navigation div */
+.first-nav-div {
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 85px;
+	background-color: #242423;
+	font-weight: 400;
+	font-size: 1rem;
+	align-items: center;
+	border-bottom: solid 0.5px;
+	border-bottom-color: #c7c8ca;
+	color: #fefdfa;
+}
+
+/* Styling for unordered list within the first navigation div */
+.first-nav-div ul {
+	list-style: none;
+}
+
+/* Styling for list items within the first navigation div */
+.first-nav-div ul li {
+	display: inline-block;
+}
+
+/* Styling for links in specific sections of the first navigation div */
+.second-ul-first-div li a,
+.school-name a,
+.third-ul-first-div li a {
+	text-decoration: none;
+	color: #fefdfa;
+}
+
+/* Hover effect for links in specific sections of the first navigation div */
+.second-ul-first-div li a:hover,
+.school-name a:hover,
+.third-ul-first-div li a:hover {
+	color: #a0d2e0;
+}
+
+/* Styling for the school name section */
+.school-name {
+	font-family: 'Plafair Display', 'Helvetica Neue';
+}
+
+/* Styling for the UNL logo and name section */
+.unl-logo-name {
+	display: flex;
+	align-items: center;
+	background-color: #242423;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 83px;
+}
+
+/* Styling for the UNL logo within the UNL logo and name section */
+.unl-logo-name img {
+	height: 70px;
+	width: 60px;
+	fill: #d00000;
+}
+
+/* Styling for the unordered list within the UNL logo and name section */
+.unl-logo-name ul {
+	list-style: none;
+	margin-left: 15px;
+	font-size: 30px;
+	font-family: 'Work Sans', 'Helvetica Neue';
+	font-weight: 600;
+}
+
+/* Styling for links within the UNL logo and name section */
+.unl-logo-name ul li a {
+	text-decoration: none;
+	color: #fefdfa;
+}
+
+/* Hover effect for links within the UNL logo and name section */
+.unl-logo-name ul li a:hover {
+	color: #a0d2e0;
+}
+
+/* Styling for list items within specific sections of the first navigation div */
+.second-ul-first-div li {
+	margin: 0 0.9rem;
+}
+
+/* Styling for list items within specific sections of the first navigation div */
+.third-ul-first-div li {
+	margin: 0 0.5rem;
+}
+
+/* Styling for the third unordered list within the first navigation div */
+.third-ul-first-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Styling for the input field within the first navigation div */
+.first-div-input {
+	border-color: #a00000;
+	border-width: 1px;
+	background-color: #242423;
+	color: #fefdfa;
+	width: 240px;
+	padding: 7px 7px;
+}
+
+/* Styling for the placeholder text within the input field */
+.first-div-input::placeholder {
+	color: #fefdfa;
+	padding-left: 4px;
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+/* Styling for the second navigation div */
+.second-nav-div {
+	padding: 15px 70px;
+	background-color: #d00000;
+	color: #fefdfa;
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+
+/* Styling for unordered list within the second navigation div */
+.second-nav-div ul {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	column-gap: 10px;
+	padding: 0.1rem 1rem;
+	list-style: none;
+}
+
+/* Styling for links within the second navigation div */
+.second-nav-div ul li a {
+	text-decoration: none;
+	color: #fefdfa;
+}
+
+/* Hover effect for links within the second navigation div */
+.second-nav-div ul li a:hover {
+	text-decoration: underline;
+}
+
+/* Styling for specific list items within the second navigation div */
+.second-l1,
+.second-l2,
+.second-l3,
+.second-l4 {
+	border-right: 1px solid #a00000;
+}
+
+.second-l5 {
+	width: 200px;
+}
+
+.second-l6,
+.second-l1 {
+	border-left: 1px solid #a00000;
+	margin-left: 10px;
+}
+
+/* Styling for the scroll to top button */
+#btnScrollToTop {
+	padding: 15px;
+	position: fixed;
+	right: 15px;
+	bottom: 10px;
+	background-color: #fefdfa;
+	color: #d00000;
+	border: #fefdfa;
+	border-width: 10px;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+/* Hover effect for the scroll to top button */
+#btnScrollToTop:hover {
+	background-color: #d9d8d4;
+}
+
+/* Active state for the scroll to top button */
+#btnScrollToTop:active {
+	background-color: #d00000;
+	color: #fefdfa;
+}
+
+/* Styling for the third navigation div */
+.third-nav-div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #1f1f1e;
+	z-index: 1;
+	padding: 50px 0;
+	font-size: 1.2em;
+	margin-top: 47px;
+}
+
+/* Styling for list items within the third navigation div */
+.third-nav-div li {
+	list-style: none;
+}
+
+/* Styling for links within the third navigation div */
+.third-nav-div li a {
+	color: #71bdd3;
+	text-decoration: none;
+}
+
+/* Hover effect for links within the third navigation div */
+.third-nav-div li a:hover {
+	color: #a0d2e0;
+}
+
+/* Styling for the main content section */
+main {
+	background-color: #242423;
+}
+
+/* Styling for the first main content section */
+.first-main-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 30px 50px 90px 50px;
+}
+
+/* Styling for images within the first main content section */
+.first-main-content img {
+	max-height: 600px;
+	width: 600px;
+	object-fit: cover;
+	display: flex;
+	margin: 0 auto;
+	border-radius: 300px;
+}
+
+/* Styling for the first main content div */
+.first-main-div {
+	margin-top: 60px;
+}
+
+/* Styling for the heading within the first main content section */
+.section1 h2 {
+	font-size: 3em;
+	font-size: 2.5em;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+/* Styling for paragraphs within the first main content section */
+.section1 p {
+	color: #c7c8ca;
+	width: 700px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+/* Styling for unordered list within the first main content section */
+.section1 ul {
+	list-style: none;
+	margin-top: 20px;
+	width: 400px;
+}
+
+/* Styling for links within the unordered list of the first main content section */
+.section1 ul li a {
+	text-decoration: none;
+	color: #d00000;
+}
+
+/* Styling for specific lists within the first main content section */
+.section1-list1,
+.section1-list2,
+.section1-list3 {
+	background-color: #ebebea;
+	margin-bottom: 10px;
+	padding: 20px 10px 20px 20px;
+	border-radius: 4px;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+/* Hover effect for specific lists within the first main content section */
+.section1-list1:hover,
+.section1-list2:hover,
+.section1-list3:hover {
+	background-color: #fefdfa;
+}
+
+/* Styling for the "No Place Like Nebraska" section */
+.no-place-like-nebraska {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	background-color: #1f1f1e;
+}
+
+/* Styling for the heading within the "No Place Like Nebraska" section */
+.no-place-like-nebraska h2 {
+	color: #fff;
+	font-size: 2.5em;
+	margin-bottom: 25px;
+}
+
+/* Styling for paragraphs within the "No Place Like Nebraska" section */
+.no-place-like-nebraska p {
+	color: #c7c8ca;
+	max-width: 910px;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+/* Styling for the record-breaking wrapper section */
+.record-breaking-wrapper {
+	padding: 60px;
+	background: linear-gradient(to right, #570202, #780202);
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 0;
+	border-bottom-style: double;
+	border-bottom-width: 7px;
+}
+
+/* Styling for individual record-breaking divs */
+.record-breaking-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/* Styling for images within the record-breaking wrapper */
+.record-breaking-wrapper img {
+	width: 530px;
+	height: 380px;
+	object-fit: cover;
+	margin: 0;
+	padding: 0;
+	transition: filter 0.3s ease;
+}
+
+/* Hover effect for images within the record-breaking wrapper */
+.record-breaking-wrapper img:hover {
+	filter: brightness(1.2);
+}
+
+/* Styling for headings within the record-breaking inner div */
+.record-breaking-inner-div h3 {
+	color: #71bdd3;
+	font-family: sans-serif, arial, helvetica;
+	margin-bottom: 20px;
+	font-size: 25px;
+}
+
+/* Styling for paragraphs within the record-breaking inner div */
+.record-breaking-inner-div p {
+	color: #c7c8ca;
+}
+
+/* Styling for the record-breaking inner div */
+.record-breaking-inner-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #424240;
+	margin: 0;
+	height: 150px;
+	width: 530px;
+}
+
+/* Styling for the laboratory wrapper section */
+.laboratory-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-top: 40px;
+	background-color: #1f1f1e;
+	padding-bottom: 40px;
+}
+
+/* Styling for images within the laboratory wrapper */
+.laboratory-wrapper img {
+	max-height: 600px;
+	width: 600px;
+	object-fit: cover;
+	display: flex;
+	margin: 0 auto;
+	border-radius: 300px;
+}
+
+/* Styling for the main div within the laboratory wrapper */
+.laboratory-main-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Styling for the heading within the laboratory main div */
+.laboratory-main-div h2 {
+	font-size: 2.5em;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+/* Styling for paragraphs within the laboratory main div */
+.laboratory-main-div p {
+	color: #c7c8ca;
+	max-width: 910px;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	max-width: 750px;
+	padding-left: 147px;
+	margin-bottom: 20px;
+}
+
+/* Styling for specific sections within the laboratory main div */
+.Lab-section1,
+.Lab-section2,
+.Lab-section3 {
+	list-style: none;
+	background-color: #ebebea;
+	margin-bottom: 10px;
+	padding: 15px 20px 15px 20px;
+	border-radius: 4px;
+	font-size: 1em;
+	font-weight: 550;
+}
+
+/* Hover effect for specific sections within the laboratory main div */
+.Lab-section1:hover,
+.Lab-section2:hover,
+.Lab-section3:hover {
+	background-color: #fefdfa;
+}
+
+/* Styling for links within the laboratory main div */
+.laboratory-main-div ul li a {
+	text-decoration: none;
+	color: #d00000;
+}
+
+/* Styling for the unordered list within the lab container */
+.lab-container ul {
+	display: flex;
+	column-gap: 10px;
+	margin-left: -20px;
+}
+
+/* Specific styling for the third section within the lab container */
+.Lab-section3 {
+	margin-left: -174px;
+}
+
+/* Styling for the ballroom main div section */
+.ballroom-main-div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+/* Styling for the left side of the ballroom div */
+.left-side-of-ballroom-div {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding-left: 150px;
+}
+
+/* Styling for images within the left side of the ballroom div */
+.left-side-of-ballroom-div img {
+	width: 722px;
+	height: 406px;
+	border-style: double solid;
+	transition: filter 0.3s ease;
+}
+
+/* Hover effect for images within the left side of the ball*/
+.left-side-of-ballroom-div img:hover,
+.right-side-of-ballroom-div img:hover {
+	filter: brightness(1.2);
+}
+
+/* Styles for left side of the ballroom div */
+.left-side-of-ballroom-div ul {
+	list-style: none; /* Remove default list styles */
+	font-size: 34px;
+	color: #71bdd3;
+	max-width: 700px;
+	font-weight: 500;
+	font-family: 'Work Sans', 'Helvetica Neue';
+}
+
+.left-side-of-ballroom-div p {
+	font-size: 16px;
+	color: #c7c8ca;
+	line-height: 1.5em;
+	max-width: 700px;
+}
+
+/* Styles for right side of the ballroom div */
+.right-side-of-ballroom-div {
+	display: grid;
+	margin-top: -30px;
+}
+
+.right-side-first-grid img,
+.right-side-second-grid img,
+.right-side-third-grid img {
+	width: 202px;
+	height: 103px;
+	margin-right: 25px;
+	border-style: double solid; /* Double border */
+	transition: filter 0.3s ease; /* Smooth transition for filter property */
+}
+
+.right-side-first-grid,
+.right-side-second-grid,
+.right-side-third-grid {
+	display: flex;
+	align-items: center;
+	padding-top: 0;
+}
+
+.right-side-first-grid ul,
+.right-side-second-grid ul,
+.right-side-third-grid ul {
+	list-style: none;
+	color: #a0d2e0;
+	font-size: 21.6px;
+	font-weight: 580;
+	font-family: 'Work Sans', 'Sans-serif';
+	line-height: 1.4em;
+	max-width: 400px;
+}
+
+.right-side-forth-grid ul li a {
+	text-decoration: none;
+	color: #d00000;
+}
+
+.right-side-forth-grid ul {
+	max-width: 275px;
+}
+
+.right-side-forth-grid ul li:hover {
+	background-color: #fefdfa; /* Background color on hover */
+}
+
+/* Styles for social life section */
+.social-life-wrapper {
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.social-life-heading {
+	color: #fff;
+	font-size: 1.6em;
+	font-family: 'work-sans', sans-serif;
+	margin-bottom: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.social-life,
+.social-life1 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.social-life img,
+.social-life1 img {
+	max-width: 420px;
+	height: 420px;
+	object-fit: cover;
+	border-radius: 2px;
+	column-gap: 15px;
+	transition: filter 0.3s ease;
+}
+
+.social-life img:hover,
+.social-life1 img:hover {
+	filter: brightness(1.2); /* Increase brightness on hover */
+}
+
+.social-life1 {
+	margin-top: 30px;
+	column-gap: 15px;
+}
+
+/* Styles for shape future div */
+.shape-future-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	background-color: #d00000;
+	border-bottom-style: double;
+	border-bottom-width: 7px;
+}
+
+.shape-future-div h2 {
+	font-size: 1.7em;
+	color: #fff;
+	margin-bottom: 20px;
+	font-family: 'work-sans', sans-serif;
+}
+
+.future1,
+.future2 {
+	list-style: none;
+	background-color: #ebebea;
+	margin-bottom: 10px;
+	padding: 15px 20px 15px 20px;
+	border-radius: 4px;
+	font-size: 1em;
+	font-weight: 550;
+}
+
+.shape-future-inner-div ul li a {
+	text-decoration: none;
+	color: #d00000;
+}
+
+.shape-future-inner-div ul {
+	display: flex;
+	column-gap: 10px;
+}
+
+.shape-future-inner-div ul li:hover {
+	background-color: #fefdfa; /* Background color on hover */
+}
+
+/* Beginning of CSS code for footer */
+footer {
+	background-color: #424240;
+	padding-bottom: 40px;
+}
+
+.footer-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding-top: 80px;
+	padding-left: 100px;
+	padding-right: 0;
+}
+
+.affiliates-div h5,
+.campus-links-div h5,
+.policies-reports-div h5,
+.contact-us-div h5 {
+	color: #fefdfa;
+	margin-bottom: 25px;
+}
+
+.contact-us-div p {
+	color: #c7c8ca;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.affiliates-div ul li a,
+.campus-links-div ul li a,
+.policies-reports-div ul li a {
+	color: #c7c8ca;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.affiliates-div ul li,
+.campus-links-div ul li,
+.policies-reports-div ul li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.affiliates-div ul li:hover,
+.campus-links-div ul li:hover,
+.policies-reports-div ul li:hover {
+	text-decoration: underline;
+	text-decoration-color: #fefdfa;
+}
+
+/* Styles for copyright div */
+.copyright-div {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #fefdfa;
+	margin-top: 60px;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	padding-top: 20px;
+}
+
+.copyright-div ul li {
+	list-style: none;
+	font-family: 'Plafair Display', 'Helvetica Neue';
+	font-size: 14px;
+}
+
+.copyright-div p {
+	font-size: 14px;
+}
