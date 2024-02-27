@@ -2,7 +2,7 @@
 
 Welcome to my University of Nebraska-Lincoln Website Clone! 🎓
 
-I'm excited to showcase my skills in web development through this project. Using HTML, CSS, and JavaScript, I've recreated the essence of the University of Nebraska-Lincoln's website, integrating their images, information, descriptions, and logos to create an authentic experience.
+I'm excited to showcase my skills in web development through this project. Using HTML, CSS, and JavaScript, I've recreated the essence of the University of Nebraska-Lincoln's website, integrating its images, information, descriptions, and logos to create an authentic experience.
 
 ## Project Overview
 
@@ -14,15 +14,11 @@ While the website is not yet fully responsive, I'm actively working on enhancing
 
 ## Disclaimer
 
-It's important to note that all images, logos, and videos used in this project are sourced from the University of Nebraska-Lincoln, with the exception of a few obtained from platforms like Unsplash and Pexels for additional features and design elements.
-
-## Acknowledgements
-
-I would like to express my gratitude to the University of Nebraska-Lincoln for providing the materials necessary for this project, as well as to the contributors of Unsplash and Pexels for their valuable resources.
+It's important to note that all images, logos, and videos used in this project are sourced from the University of Nebraska-Lincoln, except a few obtained from platforms like Unsplash and Pexels for additional features and design elements.
 
 Thank you for visiting my University of Nebraska-Lincoln Website Clone, and I hope you enjoy exploring the content as much as I enjoyed creating it!
 
-## Some screenshots from the website:
+## Some screenshots from the project website:
 ---
 
 ![Screenshot (15)](https://github.com/naamak01/unl-website-clone/assets/98446143/34f8e1bc-a7de-4b0d-987e-a00ded8c3e09)
