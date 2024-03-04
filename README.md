@@ -1,5 +1,8 @@
 # University of Nebraska-Lincoln Website Clone
 
+## Check site out:
+https://na-unl-site-clone.netlify.app/
+
 Welcome to my University of Nebraska-Lincoln Website Clone! 🎓
 
 I'm excited to showcase my skills in web development through this project. Using HTML, CSS, and JavaScript, I've recreated the essence of the University of Nebraska-Lincoln's website, integrating its images, information, descriptions, and logos to create an authentic experience.
