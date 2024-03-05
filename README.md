@@ -23,6 +23,7 @@ Thank you for visiting my University of Nebraska-Lincoln Website Clone, and I ho
 
 ## Some screenshots from the project website:
 ---
+![unl-main-pic](https://github.com/naamak01/unl-website-clone/assets/98446143/7cec14ec-9f59-491c-8e5f-4229c059485b)
 
 ![Screenshot (15)](https://github.com/naamak01/unl-website-clone/assets/98446143/34f8e1bc-a7de-4b0d-987e-a00ded8c3e09)
 
